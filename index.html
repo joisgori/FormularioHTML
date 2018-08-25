@@ -1,0 +1,61 @@
+<!docTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 align="center">Formulario</h1>
+    <form action="#" method="GET">
+    <table>
+        <fieldset>
+                <legend>Personal</legend>
+                    <label>Nombre:</label> <input type="text" name="Nombre" required pattern="[A-Za-z0-9]+">
+                    <label>Fecha de nacimiento:</label> <input type="date" name="FechaN" >
+                    <label>Animal favorito:</label>
+                    <select>
+                        <option>Perro</option>
+                        <option>Gato</option>
+                        <option>Aves</option>
+                        <option>Peces</option>
+                    </select>
+        </fieldset>
+    </table>
+    <br>
+    <table>
+        <fieldset>
+            <legend>Cuenta</legend>
+            <label>Email:</label> <input type="email" name="Email" placeholder="usuario@gmail.com">
+            <label>Contraseña:</label> <input type="password" name="Contraseña">
+            <label>Verificar Contraseña:</label> <input type="password" name="VContraseña">
+        </fieldset>
+    </table>
+    <br>
+    <table>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label>Dirección:</label> <input type="text" name="Direccion" required pattern="[A-Za-z0-9]+">
+                <label>Ciudad:</label> <input type="password" name="Ciudad" required pattern="[A-Za-z0-9]+">
+                <label>País:</label> <input type="password" name="Pais" required pattern="[A-Za-z0-9]+">
+                <label>Número de teléfono:</label> <input type="text" name="NT" placeholder="7777-7777" required pattern="[0-9]{1,9}">
+            </fieldset>
+        </table>
+        <br>
+
+        <fieldset>
+            <legend>Finalizar Formulario</legend>
+            <button>Enviar</button>
+            <!--<input type="button" value=Cancel>-->
+        </fieldset>
+        
+
+
+    </form>
+    
+    
+</body>
+</html>
